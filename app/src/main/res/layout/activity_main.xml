@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/ejeX"
+        android:gravity="center"
+        android:background="@drawable/circlered"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/ejeY"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/ejeY"
+        android:gravity="center"
+        android:background="@drawable/circlegreen"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ejeX"
+        android:layout_alignStart="@+id/ejeX"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/ejeZ"
+        android:gravity="center"
+        android:background="@drawable/circleblue"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@+id/ejeY"
+        android:layout_alignLeft="@+id/ejeY"
+        android:layout_alignStart="@+id/ejeY"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eje Y  "
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eje Z  "
+        android:id="@+id/leyendaZ"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="34dp"
+        android:layout_alignBottom="@+id/ejeZ"
+        android:layout_toLeftOf="@+id/ejeZ"
+        android:layout_toStartOf="@+id/ejeZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eje X  "
+        android:id="@+id/textView2"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/ejeX"
+        android:layout_alignRight="@+id/leyendaZ"
+        android:layout_alignEnd="@+id/leyendaZ"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
